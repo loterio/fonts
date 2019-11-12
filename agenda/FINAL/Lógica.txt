@@ -1,0 +1,60 @@
+=========================Recebe os Dados====================
+* Recebe cadastros Json
+* Pega os valores dos inputs:
+  * aniversariantes do mês
+  * emails Dominio
+  * aproximadamente
+* Recebe os dados do ultimo formulário
+* verifica se estão preenchidos:
+sim:
+  * Verifica se o botão universal submit tem algum valor:
+   sim: Salva os dados do formulário no índice com valor do botão universal
+* verifica o ultimo botão clicado
+  * Inserir
+    - Cria formulário e o botão universal submit ele terá o valor de cadastros + 1
+  * Alterar
+    - Cria formulário e o botão universal submit dele terá o valor do botão alterar clicado
+  * Excluir
+    - valor do botão excluir clicado é o índice do vetor que será excluído
+===========Verifica se existe algum cadastro================
+sim:
+ * mostra botão inserir
+não:
+ * lista cadastros
+ * opção de listar aniversariantes do mês
+ * opção de listar contados por domínio e-mail
+ * opção de listar por nomes que contenham caracteres informados
+ * mostra botão inserir
+=========================Inserir=============================
+* Cria botão
+* Quando clicado abre formulário
+* Envia os dados
+=========================Alterar=============================
+* Cria botão
+* Quando clicado abre formulário com os valores já preenchidos
+* Envia os dados
+======================Lista cadastros========================
+* Recebe o vetor cadastros
+* Recebe índices que vai mostrar
+* Mostra cadastros e no final de cada linha põe um botão alterar e outro excluir que vão ter o valor da repetição
+=====================aniversariantes do mês===================
+* select simples com os nomes do meses
+* input submit ao lado
+-------------------buscando os dados no array-----------------
+* percorre todos os cadastros e fixa a posição data_nascimento e mês ex: array[$i][3][1]
+* salva em um array todos os indices que o valor array[$i][3][1] é igual ao número do mês
+* lista os cadastros
+=====================email Dominio===================
+* select simples com os nomes dos domios existentes
+* input submit ao lado
+-------------------buscando os dados no array-----------------
+* percorre todos os cadastros e fixa a posição e-mail e a parte do dominio: array[$i][2][2]
+* salva em um array todos os indices que o valor array[$i][2][2] é igual ao número do mês
+* lista os cadastros
+====================Busca por aproximação===================
+* input com os caracteres
+* input submit ao lado
+---------------------Quando executado------------------------
+* conta número de caractere digitados.
+* percorre todos os cadastros e fixa a posição nome: array[$i][2], roda a função verificaSetem()
+* salva em um array todos os indices que o valor informado está contido

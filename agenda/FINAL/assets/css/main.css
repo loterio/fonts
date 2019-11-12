@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.big {
+  font-size: 60px;
+}
+.botao {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 12px;
+}
+.ctrl {
+  margin-top: 4%;
+  align-content: center;
+}
+.fecha {
+  background: white;
+  padding-bottom: 0;
+  width: 32px;
+  font-weight: bold;
+  border: none;
+  font-size: 20px;
+}
+.fecha:hover{
+  cursor: pointer;
+  background: lightgray;
+  transition: .5s;
+}
+.gran-finale {
+  background: #fafafa;
+  min-height: 8em;
+  padding-top: 26px;
+  padding-left: 14px;
+}

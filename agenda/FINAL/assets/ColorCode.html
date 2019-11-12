@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+</head>
+<body>
+	<a href="../agenda.php">Início</a>
+	<a href="../help.html">Ajuda</a>
+	<form>
+		<fieldset>
+			<legend>Formulário 1</legend>
+
+			<label for="cor">Cores c/código hexadecimal</label><br>
+			<input type="color" name="cor" id="cor"
+				value="#ff00ff" onchange="novo.value=value">
+
+			<input type="text" name="novo" id="novo"
+				readonly="true" size="5" value="#ff00ff">
+
+			<br><br>
+			<label for="nivel">Nível</label><br>
+			<input type="range" name="nivel" id="nivel"
+				min="0" max="100" step="5" value="50"
+				oninput="display.value=value">
+			<input type="text" name="display" id="display"
+				readonly="true" size="1" value="50">
+		</fieldset>
+	</form>
+</body>
+</html>

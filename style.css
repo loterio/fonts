@@ -1,0 +1,26 @@
+@charset="utf-8";
+fieldset{
+	width: 40%;
+	border-color: lightgray;
+	background: lightgray;
+	margin: 10px;
+}
+fieldset:hover{
+	background: #fafafa;
+}
+legend{
+	font-weight: 600;
+	background: lightgray;
+	font-family: Arial;
+	font-size: 14px;
+}
+input[type='submit']{
+	background: gray;
+	border: none;
+	margin-left: 20px;
+	width: 200px;
+	height: 36px;
+}
+input[type='submit']:hover{
+	background: #f1f1f1;
+}

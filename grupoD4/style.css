@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+  font-family: Helvetica;
+}
+table{
+  border: 1px solid lightgray;
+}
+th, td, tr{
+  padding: 8px;
+}
+td:hover{
+  background: #fafafa;
+  transition: .2s;
+  border: 1px solid black;
+}
+th{
+  background: gray;
+}
+td{
+  background: lightgray;
+}

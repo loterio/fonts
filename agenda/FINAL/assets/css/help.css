@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.ctrl {
+  margin-top: 4%;
+}
+.til {
+  font-size: 36px;
+  font-weight: 400;
+  padding-bottom: .5%;
+}
+.sub{
+  font-size: 26px;
+}
+.sm {
+  font-size: 20px;
+}
+.tex {
+  font-size: 18px;
+}
+.important {
+  color: #9918e7;
+  font-weight: 500;
+}
+a:hover  {
+  color: #9918e7;
+}
+.plus{
+  padding-bottom: 30px;
+}

@@ -1,0 +1,22 @@
+paginas:
+  Menu:
+    * Inserir;
+    * Pesquisar;
+    * Listar.
+    !Salva que a ultima pagina foi menu
+  Menu com Lista: se fechado retorna ao menu
+    * Inserir;
+    * Pesquisar;
+    * tabela;
+    !Salva que a ultima pagina foi lista
+  Pesquisar Inicio: se fechada retorna ao menu
+    * formulário;
+    !Salva como ultima pagina Pesquisa Inicial
+  Pesquisar Lista: se fechada retorna ao menu
+    se ultima pagina pesquisa inicial zera Pesquisa Antiga e Salva a Nova
+    * formulário;
+    * lista;
+    !Salva como ultima pagina Pesquisa Lista
+  Cadastrar (novo, alterar): se novo retorna ao Menu
+                             se alterar retorna a ultima pagina: menu Lista ou pesquisar Lista,
+    * formulário;
