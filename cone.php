@@ -23,11 +23,12 @@ $g=sqrt(($r*$r)+($z*$z));
 $area=(pi*$r*($r+$g))+(pi*$r*($r+$g))-(pi*($r*$r));
 $litros=ceil($area/3.45);
 $latas=ceil($litros/18);
+
 ?>
 <html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
-	<title><?php  ?></title>
+	<title><?php echo $title; ?></title>
 	<link rel="stylesheet" href="MyselfCSS/assets/css/basico.css">
 </head>
 <body>
